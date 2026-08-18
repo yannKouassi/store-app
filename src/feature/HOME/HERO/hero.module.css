@@ -85,6 +85,12 @@
     color: var(--color-neutral-content);
 }
 
+.btn-secondary:active{
+    transform: scale(0.95);
+}
+.btn-primary:active{
+    transform: scale(0.95);
+}
 .hero-title{
     font-size: 35px;
     color: var(--color-base-content);
