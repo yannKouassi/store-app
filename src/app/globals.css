@@ -1,26 +1,21 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, emerald;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+body,html{
+  font-family: "Elms Sans", sans-serif !important;
+  background-color: #d4d4d4;
+  opacity: 1;
+  background-image:  radial-gradient(circle, #c5c5c5 0.8px, transparent 0.8px), radial-gradient(circle, #b9b9b9 0.8px, transparent 0.8px) ;
+  background-size: 5px 20px, 20px 5px;
+  background-position: -2.5px -10px, -10px -2.5px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
