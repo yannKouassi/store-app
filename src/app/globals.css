@@ -7,7 +7,7 @@
 
 body,html{
   font-family: "Elms Sans", sans-serif !important;
-  background-color: #d4d4d4;
+  background-color: #f8f8f8;
   opacity: 1;
   background-image:  radial-gradient(circle, #c5c5c5 0.8px, transparent 0.8px), radial-gradient(circle, #b9b9b9 0.8px, transparent 0.8px) ;
   background-size: 5px 20px, 20px 5px;

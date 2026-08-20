@@ -11,7 +11,9 @@ export default function Hero(props: Props) {
 
     const router = useRouter()
 
-
+    const handleMouseEnter = () => {
+        router.prefetch("/catalogue")
+    }
     function handleNavigate() {
         router.push("/catalogue")
     }
@@ -28,11 +30,13 @@ export default function Hero(props: Props) {
 
 
                 <p className={styles['btn']}>
-                    <button className={styles['btn-primary']} onClick={handleNavigate}>
+                    <button className={styles['btn-primary']} onClick={handleNavigate} onMouseEnter={handleMouseEnter}>
                         <Images size={18}/>
                         Voir le catalogue
                     </button >
-                    <button className={styles['btn-secondary']} ><BadgePercent size={18}/>Nos promotions</button>
+                    <button className={styles['btn-secondary']} >
+                        <BadgePercent size={18}/>Nos promotions
+                    </button>
                 </p>
                 <div className={styles['hero-badge']}>
                     <p className={styles['hero-badge-text']}>

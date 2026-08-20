@@ -4,7 +4,9 @@ import {RecipesResponse} from "@/types/recipes-response.model";
 
   const getRecipes = async (): Promise<RecipesResponse> => {
 
-    const response = await fetch('https://dummyjson.com/recipes');
+    const response = await fetch('https://dummyjson.com/recipes',{
+        next:{revalidate:120}
+    });
     if(!response.ok){
         throw new Error(response.statusText);
     }
