@@ -1,7 +1,7 @@
 "use client"
 
 type Props={
-    error: Error;
+    error:Error;
     reset:()=>void;
 }
 
